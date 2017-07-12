@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Responsive design, mobile-first approach  */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 60%;
+  background-color: #21AFA3;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.header {
+  font-family: Garamond, serif;
+  font-size: 4.5em;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+i.fa-book {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.data-area {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  font-size: 1.875em;
+}
+
+.search-field {
+  width: 75%;
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  margin: 0 auto;
+}
+
+input, button {
+ font-size: 0.8em;
+ color: #FFFFFF;
+ background-color: #21AFA3;
+ border: none;
+ outline: none;
+}
+
+input {
+  width: 90%;
+}
+
+button {
+  cursor: pointer;
+}
+
+#clear {
+  margin: 0 auto;
+  padding: 1px;
+}
+
+#random-btn {
+  border-bottom: 2px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.resultsDisplay {
+  width: 90%;
+  text-align: left;
+  margin: 1% auto;
+  padding: 1%;
+  border-radius: 5px;
+  background-color: #AEEEE9;
+  color: #157971;
+  font-size: 1.5em;
+}
+
+a:link {
+  text-decoration: none;
+  color: #157971;
+}
+
+footer {
+  height: 50px;
+  padding: 1%;
+  font-size: 1.2em; 
+} 
+
+/* Tablet Styles */
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+  body {
+    font-size: 75%;
+  }
+   .search-field {
+  width: 50%;
+  }
+  i.fa-book {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  }
+  .data-area {
+    margin-bottom: 100px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1001px) {
+  body {
+    font-size: 100%;
+  }
+  .search-field {
+  width: 45%;
+  }
+    i.fa-book {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  }
+   .data-area {
+    margin-bottom: 100px;
+  }
+}
