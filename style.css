@@ -6,7 +6,7 @@
 /* Responsive design, mobile-first approach  */
 body {
   font-family: Arial, sans-serif;
-  font-size: 60%;
+  font-size: 75%;
   background-color: #21AFA3;
   color: #FFFFFF;
   text-align: center;
@@ -34,7 +34,8 @@ i.fa-book {
 }
 
 .search-field {
-  width: 75%;
+  display: flex;
+  width: 90%;
   border-radius: 5px;
   border: 2px solid #FFFFFF;
   margin: 0 auto;
@@ -46,24 +47,35 @@ input, button {
  background-color: #21AFA3;
  border: none;
  outline: none;
+ padding: 5px;
 }
 
-input {
-  width: 90%;
-}
-
-button {
-  cursor: pointer;
+#submit {
+  margin-left: auto;
 }
 
 #clear {
-  margin: 0 auto;
-  padding: 1px;
+  color: #808080;
+}
+
+#submit:hover  {
+  color: #0066FF;
+  cursor: pointer;
+}
+
+#clear:hover {
+  color: #EC1313;
+  cursor: pointer;
 }
 
 #random-btn {
   border-bottom: 2px solid #FFFFFF;
   cursor: pointer;
+}
+
+#random-btn:hover {
+  color: #6600CC;
+  border-bottom: 2px solid #6600CC;
 }
 
 .resultsDisplay {
@@ -82,19 +94,23 @@ a:link {
   color: #157971;
 }
 
-footer {
+a:hover {
+  color: #6600CC;
+}
+
+/*footer {
   height: 50px;
   padding: 1%;
   font-size: 1.2em; 
-} 
+}*/
 
 /* Tablet Styles */
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
   body {
-    font-size: 75%;
+    font-size: 87.5%;
   }
    .search-field {
-  width: 50%;
+  width: 75%;
   }
   i.fa-book {
   margin-top: 100px;
