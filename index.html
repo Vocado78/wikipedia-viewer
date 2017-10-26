@@ -1,23 +1,42 @@
-<div class="header">Wikipedia Viewer</div>
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <h1 class="header">Wikipedia Viewer</h1>
 
 <i class="fa fa-book fa-5x" aria-hidden="true"></i>
 
 <div class="data-area">
   <p>Search Wikipedia</p>
-
   <form>
     <div class="search-field">
       <input id="search-word" type="text" placeholder="Type in topic..." />
-      <button onmouseover="mOver(this)" onmouseout="mOut(this)" title="Search" id="submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i>       </button>
+      <button title="Search" id="submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i>       
+  </button>
+      <button title="Clear for new search" id="clear" type="submit"><i class="fa fa-times" aria-hidden="true"></i>
+  </button>
     </div>
   </form>
-
-  <button onmouseover="mOver(this)" onmouseout="mOut(this)" title="Erase for new search" id="clear" type="submit"><i class="fa fa-eraser fa-2x" aria-hidden="true"></i>
-  </button>
-
-  <p>or click <span id="random-btn" onclick="showRandomArticle()" onmouseover="mOver(this)" onmouseout="mOut(this)">here</span> for a random article</p>
+  <p>or <span id="random-btn" onclick="showRandomArticle()">click here</span> for a random article</p>
 </div>
 
 <div class="search-results"></div>
 
 <footer>by Vocado78 - a FreeCodeCamp project</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
